@@ -1,0 +1,141 @@
+body {
+  background-color: #add8e6
+}
+
+.introduction {
+  width: 570px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.list {
+  position: relative;
+  width: 572px;
+  margin: 0px auto;
+  display: block;
+  margin-top: 10px;
+}
+
+#due-date-at {
+  width: 250px;
+}
+#content {
+  width: 250px;
+  padding: 3px;
+}
+
+#list-item {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.submit {
+  width: 50px;
+  background-color: #20b2aa;
+  border-radius: 2px;
+  color: white;
+  font-style: italic;
+  padding: 6px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+
+.draggable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  will-change: transform;
+  list-style-type: none;
+  margin: 10px;
+  background-color: #e0ffff;
+  color: #212121;
+  width: 250px;
+  padding: 7px 17px 7px 17px;
+  cursor: move;
+  transition: all 200ms;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #7386be;
+  width: 535px;
+  font-size: 0.8rem;
+}
+
+.draggable:hover:after {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.draggable-complete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  will-change: transform;
+  list-style-type: none;
+  margin: 10px;
+  background-color: #90ee90;
+  color: #212121;
+  width: 250px;
+  padding: 7px 17px 7px 17px;
+  cursor: move;
+  transition: all 200ms;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid blue;
+  width: 535px;
+  border-radius: 4px;
+  border: 2px solid #7386be;
+  width: 535px;
+  font-size: 0.8rem;
+}
+
+.text-incomplete {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-complete {
+  font-style: italic;
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.item-due-date-at {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.right-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.over {
+  transform: scale(1.1, 1.1);
+}
+
+i {
+  z-index: 100;
+}
+
+i:hover {
+  cursor: pointer;
+}

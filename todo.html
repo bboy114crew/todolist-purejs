@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="introduction">
+      <h1>TO DO LIST</h1>
+      <span class="intro-text" style="color: #455eb4;">Enter text into the input field to add item to your list</span>
+      <span class="intro-text" style="color: #4c6cf5;">Click the item to mark it as complete</span>
+      <span class="intro-text" style="color: #7caae9;">
+        Click the <i class="fa fa-trash"></i> icon to remove the item from your
+        list
+      </span>
+    </div>
+    <div class="list">
+      <input type="datetime-local" step="1" id="due-date-at" name="due-date-at" />
+      <input
+        type="text"
+        class="input"
+        placeholder="New item"
+        id="content"
+        name="content"
+      />
+      <span class="submit">Submit</span>
+    </div>
+    <div id="list-item"></div>
+    <script src="./js/todo.js"></script>
+  </body>
+</html>
